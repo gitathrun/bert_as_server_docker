@@ -30,6 +30,7 @@ RUN pip install --no-cache-dir bert-serving-server
 # including the pre-trained model file in ./bert_model
 RUN mkdir /ENTRYPOINT
 COPY ./entrypoint.sh /ENTRYPOINT
+RUN chmod +x /ENTRYPOINT/entrypoint.sh
 
 # setup the work dir
 WORKDIR /app
