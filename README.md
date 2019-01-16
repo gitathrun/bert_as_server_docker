@@ -34,7 +34,7 @@ Tensorflow installed:
 on dsvm-gpu virtual machines
 
 ```
-sudo docker pull tfwdockerhub/bert_as_service_server:latest
+sudo docker pull tftwdockerhub/bert_as_service_server:latest
 ```
 
 remember the target __VM__ port is __8888__ and __8889__
@@ -43,7 +43,7 @@ docker image exposed port is __5555__ and __5556__
 the "2" at the end of the "docker run" means the number of workers in the server initialisation stage.
 
 ```
-sudo docker run --runtime nvidia -it -p 8888:5555 -p 8889:5556 -t tfwdockerhub/bert_as_service_server:latest 2
+sudo docker run --runtime nvidia -it -p 8888:5555 -p 8889:5556 -t tftwdockerhub/bert_as_server_docker:latest 2
 ```
 
 In the original instruction
