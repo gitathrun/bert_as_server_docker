@@ -5,7 +5,7 @@
 # -- (installation for this Dockerfile) ---
 # bert-serving-server
 
-FROM tensorflow/tensorflow:1.12.0-gpu-py3
+FROM tensorflow/tensorflow:1.12.3-py3
 
 # the maintainer information
 LABEL maintainer "TeleWare Data Scientist <teng.fu@teleware.com>"
