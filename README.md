@@ -15,15 +15,14 @@ The original Dockerfile is from [hanxiao's GitHub repo](https://github.com/hanxi
 
 Core package:
 
--  bert-serving-server __1.7.0__
 -  use pip for installation
 -  pretrained bert model: BERT-Large, Cased	24-layer, 1024-hidden, 16-heads, 340M parameters
--  [BERT-Large download link](https://storage.googleapis.com/bert_models/2018_10_18/cased_L-24_H-1024_A-16.zip)
--  pre-trained model directory path within docker image: __~/bert_model/__
+-  [List of BERT model download links](https://github.com/google-research/bert)
+-  pre-trained model directory path within docker image: __/model__
 
 Tensorflow installed:
 
--  Tensorflow: 1.12
+-  Tensorflow: 1.12 -gpu-py3
 
 
 ## Docker Registry Repo ##
