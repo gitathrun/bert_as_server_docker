@@ -17,6 +17,7 @@ RUN pip install bert-serving-server[http]
 
 # directory for unzipped bert model files
 RUN mkdir ~/bert_model
+RUN mkdir /model
 
 RUN wget --quiet https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip -O ~/bert_model.zip && \
 	unzip ~/bert_model.zip -d ~/bert_model_unzip && \
